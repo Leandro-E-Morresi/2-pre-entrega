@@ -22,30 +22,81 @@
             max-width: 100%;
             height: auto;
         }
+        .navbar-brand img {
+            max-height: 100px;
+        }
+        .navbar-toggler {
+            border: none;
+        }
+        .navbar-toggler-icon {
+            background-image: url('data:image/svg+xml;charset=utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 30 30"><path stroke="currentColor" stroke-width="2" d="M5 7h20M5 15h20M5 23h20"/></svg>');
+        }
+        .navbar-nav {
+            margin-left: auto;
+        }
+        @media (max-width: 1023px) {
+            .navbar-toggler {
+                margin-left: auto;
+            }
+            .navbar-collapse {
+                background-color: #333; /* Fondo oscuro para el menú desplegable */
+            }
+            .navbar-nav .nav-link {
+                color: #f5f5f5; /* Color del texto en el menú desplegable */
+            }
+            .navbar-nav .nav-link:hover {
+                color: #ddd; /* Color del texto en hover */
+            }
+             /* ...resto del CSS... */
+    .navbar-toggler {
+        border: none;
+        background-color: transparent; /* Para que no tenga fondo */
+    }
+    .navbar-toggler-icon {
+        background-image: url('data:image/svg+xml;charset=utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 30 30"><path stroke="white" stroke-width="2" d="M5 7h20M5 15h20M5 23h20"/></svg>');
+    }
+        }
     </style>
     <title>Morresi Detailing</title>
 </head>
 <body>
     <header class="bg-dark-custom text-light-custom">
-        <!-- logotipo -->
-        <img src="./images/logo.jpg" width="100" height="100" alt="logo" class="img-fluid">
-        <!--enlaces de navegación -->
-        <nav>
-            <ul class="d-flex justify-content-center gap-4 list-unstyled mb-0">
-                <li><a href="./index.html" class="text-light-custom text-decoration-none">Home</a></li>
-                <li><a href="./pages/sobre-nosotros.html" class="text-light-custom text-decoration-none">Sobre Nosotros</a></li>
-                <li><a href="./pages/servicios.html" class="text-light-custom text-decoration-none">Servicios</a></li>
-                <li><a href="./pages/marcas.html" class="text-light-custom text-decoration-none">Marcas</a></li>
-                <li><a href="./pages/contactos.html" class="text-light-custom text-decoration-none">Contactos</a></li>
-            </ul>
-        </nav>
+        <!-- Bootstrap Navbar -->
+       <nav class="navbar navbar-expand-lg navbar-dark bg-dark-custom">
+    <a class="navbar-brand" href="./index.html">
+        <img src="./images/logo.jpg" alt="Logotipo de Morresi Detailing">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+                <a class="nav-link text-light-custom" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-light-custom" href="./pages/sobre-nosotros.html">Sobre Nosotros</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-light-custom" href="./pages/servicios.html">Servicios</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-light-custom" href="./pages/marcas.html">Marcas</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-light-custom" href="./pages/contactos.html">Contactos</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
     </header>
 
     <main class="container my-4">
         <h1 class="text-center mb-4">Bienvenidos</h1>
         <div class="text-center mb-4">
             <p>Morresi Detailing es una empresa dedicada a la reparación y mantenimiento de autos, con la mejor calidad y garantía que ofrecemos.</p>
-            <img src="./images/portadautonegro.jpg" class="img-fluid" alt="portada">
+            <img src="./images/portadautonegro.jpg" class="img-fluid" alt="Portada de autos en negro">
         </div>
 
         <div class="mb-4">
@@ -58,9 +109,9 @@
         <div class="mb-4">
             <h2 class="text-light-custom">Servicios</h2>
             <div class="d-flex flex-wrap justify-content-around">
-                <img src="./images/puliendo2.jpg" class="img-fluid mb-2" alt="puliendo">
-                <img src="./images/detallado.jpg" class="img-fluid mb-2" alt="detallado">
-                <img src="./images/lavado de motor.jpg" class="img-fluid mb-2" alt="lavadomotor">
+                <img src="./images/puliendo2.jpg" class="img-fluid mb-2" alt="Proceso de pulido de auto">
+                <img src="./images/detallado.jpg" class="img-fluid mb-2" alt="Detallado de auto">
+                <img src="./images/lavado de motor.jpg" class="img-fluid mb-2" alt="Lavado de motor">
             </div>
         </div>
 
@@ -68,9 +119,9 @@
             <h2 class="text-light-custom">Marcas</h2>
             <p>Te mostramos algunas de las mejores marcas con las que trabajamos</p>
             <div class="d-flex flex-wrap justify-content-around">
-                <img src="./images/koch-chemie-logo.jpg" class="img-fluid mb-2" alt="marcakoch">
-                <img src="./images/Menzerna.jpg" class="img-fluid mb-2" alt="marcamenzerna">
-                <img src="./images/Vonixx.jpg" class="img-fluid mb-2" alt="marcavonixx">
+                <img src="./images/koch-chemie-logo.jpg" class="img-fluid mb-2" alt="Logo de Koch Chemie">
+                <img src="./images/Menzerna.jpg" class="img-fluid mb-2" alt="Logo de Menzerna">
+                <img src="./images/Vonixx.jpg" class="img-fluid mb-2" alt="Logo de Vonixx">
             </div>
         </div>
         
@@ -81,23 +132,24 @@
                 <fieldset>
                     <div class="mb-3">
                         <label for="name" class="form-label text-light-custom">Nombre y Apellido</label>
-                        <input type="text" id="name" class="form-control" placeholder="Nombre">
+                        <input type="text" id="name" class="form-control" placeholder="Ejemplo: Juan Pérez" required>
                     </div>
                     <div class="mb-3">
                         <label for="email" class="form-label text-light-custom">Correo Electrónico</label>
-                        <input type="email" id="email" class="form-control" placeholder="Correo Electrónico">
+                        <input type="email" id="email" class="form-control" placeholder="Ejemplo: correo@ejemplo.com" required>
                     </div>
                     <div class="mb-3">
                         <label for="phone" class="form-label text-light-custom">Teléfono</label>
-                        <input type="tel" id="phone" class="form-control" placeholder="Teléfono">
+                        <input type="tel" id="phone" class="form-control" placeholder="Ejemplo: +34 600 000 000" required>
                     </div>
                     <div class="mb-3">
-                        <label for="contraseña" class="form-label text-light-custom">Contraseña</label>
-                        <input type="password" id="contraseña" class="form-control" placeholder="Contraseña">
+                        <label for="password" class="form-label text-light-custom">Contraseña</label>
+                        <input type="password" id="password" class="form-control" placeholder="Tu contraseña" required>
                     </div>
                     <div class="mb-3">
-                        <label for="genero" class="form-label text-light-custom">Genero</label>
-                        <select id="genero" class="form-select">
+                        <label for="gender" class="form-label text-light-custom">Género</label>
+                        <select id="gender" class="form-select" required>
+                            <option value="" disabled selected>Selecciona tu género</option>
                             <option value="masculino">Masculino</option>
                             <option value="femenino">Femenino</option>
                             <option value="otro">Otro</option>

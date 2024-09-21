@@ -8,6 +8,8 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!-- Estilos personalizados -->
     <link rel="stylesheet" href="../css/styles.css">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="../images/icons8-auto-32.png" type="image/x-icon">
     <title>Sobre Nosotros</title>
     <style>
         body {
@@ -35,18 +37,35 @@
 </head>
 <body>
     <header class="bg-dark-custom text-light-custom py-3">
-        <div class="container-custom">
+        <div class="container-custom d-flex align-items-center">
             <!-- logotipo -->
-            <img src="../images/logo.jpg" alt="logo" width="100" height="100">
-            <!-- enlaces de navegación -->
-            <nav>
-                <ul class="d-flex justify-content-center gap-4 list-unstyled mb-0">
-                    <li><a href="../index.html" class="text-light-custom text-decoration-none">Home</a></li>
-                    <li><a href="./contactos.html" class="text-light-custom text-decoration-none">Contactos</a></li>
-                    <li><a href="./marcas.html" class="text-light-custom text-decoration-none">Marcas</a></li>
-                    <li><a href="./servicios.html" class="text-light-custom text-decoration-none">Servicios</a></li>
-                    <li><a href="./sobre-nosotros.html" class="text-light-custom text-decoration-none">Sobre Nosotros</a></li>
-                </ul>
+            <a href="../index.html">
+                <img src="../images/logo.jpg" alt="Logotipo de la empresa" width="100" height="100" class="me-3">
+            </a>
+            <!-- Navegación -->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark-custom flex-grow-1">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link text-light-custom" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light-custom" href="./contactos.html">Contactos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light-custom" href="./marcas.html">Marcas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light-custom" href="./servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light-custom" href="./sobre-nosotros.html">Sobre Nosotros</a>
+                        </li>
+                    </ul>
+                </div>
             </nav>
         </div>
     </header>
@@ -56,7 +75,7 @@
             Somos una empresa familiar con más de 5 años de trayectoria en el mercado. Estamos siempre enfocados en ofrecerte las mejores soluciones para tu vehículo, además brindamos capacitaciones al respecto.
         </p>
         <div class="text-center-custom">
-            <img src="../images/CAPACITACIONES.png" alt="capacitaciones" class="img-fluid">
+            <img src="../images/CAPACITACIONES.png" alt="Imagen de capacitaciones ofrecidas por la empresa" class="img-fluid">
         </div>
     </main>
     <footer class="bg-dark-custom text-light-custom text-center py-3">
